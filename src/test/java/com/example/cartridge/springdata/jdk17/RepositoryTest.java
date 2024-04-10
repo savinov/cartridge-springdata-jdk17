@@ -18,6 +18,6 @@ class RepositoryTest {
         book.setId(1);
         book.setName("BookName1");
         book.setYear(2024);
-        repository.myfunc(List.of(book));
+        repository.myfunc(List.of(book).toArray(new Book[0]));
     }
 }

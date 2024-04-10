@@ -9,5 +9,5 @@ import java.util.List;
 public interface BookRepository extends CrudRepository<Book, String> {
 
     @Query(function = "myfunc")
-    void myfunc(List<Book> books);
+    void myfunc(Book[] books);
 }
